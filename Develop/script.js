@@ -1,42 +1,44 @@
-var specialCase = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-var numeric = "0123456789";
+var specialCaseOptions = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+var upperCaseOptions = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCaseOptions = "abcdefghijklmnopqrstuvwxyz";
+var numericOptions = "0123456789";
 
 const button = document.querySelector('button');
+const passwordArea = document.querySelector('#password');
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
 
-// Promts to appear when button is clicked
-var passwordLength = prompt("How many characters would you like your Password to be? It may be no less than 8, and no more than 128, character in length.");
-var specialCase = confirm("Do you want special characters?");
-var upperCase = confirm("Do you want upper-case letters?");
-var lowerCase = confirm("Do you want lower-case letters?");
-var numeric = confirm("Do you want numeric characters?");
+    // Promts to appear when button is clicked
+    var passwordLength = prompt("How many characters would you like your Password to be? It may be no less than 8, and no more than 128, character in length.");
+    var specialCase = confirm("Do you want special characters?");
+    var upperCase = confirm("Do you want upper-case letters?");
+    var lowerCase = confirm("Do you want lower-case letters?");
+    var numeric = confirm("Do you want numeric characters?");
 
-console.log(passwordLength);
-
+    console.log(passwordLength);
+    console.log(specialCase);
+    console.log(upperCase);
+    console.log(lowerCase);
+    console.log(numeric);
+    const password = generatePassword(passwordLength, specialCase, upperCase, lowerCase, numeric);
+    passwordArea.textContent = password;
 });
 
+function generatePassword(passwordLength, specialCase, upperCase, lowerCase, numeric) {
+var password = "";
 
-println(passwordLength);
-println(specialCase);
-println(upperCase);
-println(lowerCase);
-println(numeric);
+var specialCaseAdded = false;
+var upperCaseAdded = false;
+var lowerCaseAdded = false;
+var numericAdded = false;
 
+for (var i = 0; i < password.length; i++) {
+if (specialCase) {
 
-form.addEventListener('submit', e => {
-const password = generatorPassword(passwordLength, specialCase, upperCase, lowerCase, numeric)
-const passwordLength = characterAmountNumber.value
-const specialCase = includeSpecialCase.true
-const upperCase = includeUpperCase.true
-const lowerCase = includeLowerCase.true
-const numeric = includeNumeric.true
-})
-
-function syncCharacterAmount(e) {
-    const value = e.target.value
-    characterAmountNumber.value = value
 }
 
+}
+
+
+return password;
+}
