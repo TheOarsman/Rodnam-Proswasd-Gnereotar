@@ -1,12 +1,14 @@
 // Assignment Code
+var generateBtn = document.querySelector("#generate");
 var length = Number(prompt("How long out would like your password to be? Must be no less than 8, and no more than 128, characters."));
 var chartype = prompt("What type of characters would you like your password to utilize?: UPPER-CASE, lower-case, $p3c!al Charat3r$, or Numbers?");
 
 
 // Creating the password
 function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
     var charSet = "";
-    var charTypeLower = charType.toLowerCase();
     if (charTypeLower === "UPPER-CASE") {
       charSet = "abcdefghijklmnopqrstuvwxyz";
     } else if (charTypeLower === "lower-case") {
@@ -15,6 +17,8 @@ function writePassword() {
       charSet = "0123456789";
     } else if (charTypeLower === "$p3c!al Charat3r$") {
       charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    } else if (chartype !== "Upper-CASE", "lower-case", "Numbers", "$p3c!al Charat3r$") {
+      charSet = "NOT A VALID ENTRY!";
     }
     //return value
     var retVal = "";
