@@ -1,4 +1,7 @@
-
+var specialCase = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var numeric = "0123456789";
 
 const button = document.querySelector('button');
 
@@ -16,26 +19,24 @@ console.log(passwordLength);
 });
 
 
-println(passwordLegnth);
+println(passwordLength);
 println(specialCase);
 println(upperCase);
 println(lowerCase);
 println(numeric);
 
-function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
-  
-    passwordText.value = password;
-  
-  }
 
-  // Minimum count for userInput(total characters), passwordlength, spcialCase, upperCase, lowerCase, & numeric
-  var minimumCount = 0;
-  
-  // Empty minimums for spcialCase, upperCase, lowerCase & numeric
-  var minimumspecialCase = "";
-  var minimumupperCase = "";
-  var minimumlowerCase = "";
-  var minimumnumeric = "";
+form.addEventListener('submit', e => {
+const password = generatorPassword(passwordLength, specialCase, upperCase, lowerCase, numeric)
+const passwordLength = characterAmountNumber.value
+const specialCase = includeSpecialCase.true
+const upperCase = includeUpperCase.true
+const lowerCase = includeLowerCase.true
+const numeric = includeNumeric.true
+})
+
+function syncCharacterAmount(e) {
+    const value = e.target.value
+    characterAmountNumber.value = value
+}
 
