@@ -1,27 +1,42 @@
 // Assignment Code
 var length = Number(prompt("How long out would like your password to be? Must be no less than 8, and no more than 128, characters."));
-var criteria = promt("What type of characters would you like your password to utilize?: UPPER-CASE, lower-case, $p3c!al Charat3r$, or Numbers?");
-var password = generatePassword ();
+var chartype = prompt("What type of characters would you like your password to utilize?: UPPER-CASE, lower-case, $p3c!al Charat3r$, or Numbers?");
+
 
 // Creating the password
 function writePassword() {
-  var criteria1 = "";
-  var name1 = criteria.name2();
-  if (name1 === "UPPER-CASE") {
-    criteria1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  } else if (name1 === "lower-case") {
-    criteria1 = "abcdefghijklmnopqrstuvwxyz";
-  } else if (name1 === "$p3c!al Charat3r$") {
-    criteria1 = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-  } else if (name1 = "Numbers") {
-    criteria1 = "0123456789"
-  };
+    var charSet = "";
+    var charTypeLower = charType.toLowerCase();
+    if (charTypeLower === "UPPER-CASE") {
+      charSet = "abcdefghijklmnopqrstuvwxyz";
+    } else if (charTypeLower === "lower-case") {
+      charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    } else if (charTypeLower === "Numbers") {
+      charSet = "0123456789";
+    } else if (charTypeLower === "$p3c!al Charat3r$") {
+      charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    }
+    //return value
+    var retVal = "";
+    for (var i = 0; i < length; i++) {
+      //picks a character within charSet at index of random number
+      retVal += charSet.charAt(Math.floor(Math.random() * charSet.length));
+    }
+    return retVal;
+  }
+  alert(generatePassword());
   
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+  //make password appear in display box
+  document.getElementById("display").value = password;
+  
+  //function to copy password to clipboard
+  function copyPassword() {
+  
+    document.getElementById("display").select();
+  
+    document.execCommand("Copy");
+  
+    alert("Password copied to clipboard!");
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
