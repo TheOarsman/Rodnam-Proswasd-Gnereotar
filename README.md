@@ -15,10 +15,10 @@ The task was to create a Random Password Genertor. Reading the tittle of this re
 * When prompts are answered their input should be validated
 * Must be no less than 8, and no more than 128, characters in length
 * Must have the following characters:
-   * Numeric
-   * Special
-   * Upper Case
-   * Lower Case
+  * Numeric
+  * Special
+  * Upper Case
+  * Lower Case
 * Once all prompts are answered a password is generated matching the selected criteria
 * The generated password is displayed on the page
 
