@@ -1,16 +1,35 @@
 # Rodnam-Proswasd-Gnereotar
 
+[Rodnam Proswasd Gnereotar](https://theoarsman.github.io/Rodnam-Proswasd-Gnereotar/)
 
+## Overview
 
+This page displays Challenge #3 for our <a href="https://bootcamp.msu.edu/coding/">Coding Bootcamp</a> course.
 
+The task was to create a Random Password Genertor. Reading the tittle of this repository may seem odd and missspelled. However, it was done purposefully. Long story short, humans read words as a whole rather than individual letters. So, as long as the first and last letters are in the correct space, the order of the remaining letter don't matter. You will still be able to read the word. Yeah, I'm a little goofy.
 
-## Reference Links for JavaScript
+## Criteria for this assignment
 
-* [How to trigger a promtp on button click in JavaScript](https://www.shecodes.io/athena/11102-how-to-trigger-a-prompt-on-button-click-in-javascript#:~:text=First%2C%20you'll%20need%20to,you%20can%20display%20the%20prompt.&text=%2F%2F%20Get%20the%20button%20element,for%20the%20click%20event%20button.)
+* Promps appear when "Generate Password" is clicked
+* Throughout the promps you select which attributes you want in your password
+* When prompts are answered their input should be validated
+* Must be no less than 8, and no more than 128, characters in length
+* Must have the following characters:
+ * Numeric
+ * Special
+ * Upper Case
+ * Lower Case
+* Once all prompts are answered a password is generated matching the selected criteria
+* The generated password is displayed on the page
 
-* [Stack Overflow: Random Password Generator - Used for confirmation code](https://stackoverflow.com/questions/62627469/random-password-generator-with-prompts)
+## Code Example
 
+Here are two examples I useed within my script.js to determine what characters could be used, and also to create a threshhold for the min/max number of characters.
 
+* Note: this is a combination of HTML and CSS to make this happen. In CSS you need to make an "ID"(#) or a "Class"(.) to correspond with your HTML code. I kept these pretty simple, just changing the text-color.
 
+For the JavaScript, here is the array created to specify what character options are and what each contains:
+* https://github.com/TheOarsman/Rodnam-Proswasd-Gnereotar/blob/9e3f437c743e08a63aef7eec6735c6e147443dfb/script.js#L1-L4
 
-* [println code](https://codehs.com/tutorial/rachel/user-input-in-javascript)
+For the "Michign State University" I used the same method, along with adding a link for to their Bootcamp page:
+* https://github.com/TheOarsman/Rodnam-Proswasd-Gnereotar/blob/9e3f437c743e08a63aef7eec6735c6e147443dfb/script.js#L12-L27
