@@ -24,21 +24,31 @@ button.addEventListener('click', function () {
     passwordArea.textContent = password;
 });
 
+function getPasswordChar(options) {
+    options[Math.floor(Math.random() * options.length)];
+}
+
+
 function generatePassword(passwordLength, specialCase, upperCase, lowerCase, numeric) {
-var password = "";
+    var password = "";
 
-var specialCaseAdded = false;
-var upperCaseAdded = false;
-var lowerCaseAdded = false;
-var numericAdded = false;
+    var specialCaseAdded = false;
+    var upperCaseAdded = false;
+    var lowerCaseAdded = false;
+    var numericAdded = false;
 
-for (var i = 0; i < password.length; i++) {
-if (specialCase) {
+    for (var i = 0; i < password.length; i++) {
+        if (specialCase) {
+            if (!specialCaseAdded) {
+                password += getPasswordChar(specialCaseOptions);
+                specialCaseAdded = true;
+            } else {
+                
+            }
+        }
 
-}
-
-}
+    }
 
 
-return password;
+    return password;
 }
