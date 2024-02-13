@@ -93,7 +93,7 @@ For the JavaScript, here is the array created to specify what character options 
 
 For the threshold of characters allowed to be used, I entered the below script. One tricky part was getting it to recognize when something other than a number was entered for the quantity, and to correct the error or throw up an Alert.<br>
 
-![passwordLength Function](assets/images/passwordLengthSnip.png)
+<img src="assets/images/passwordLengthSnip.png" width="500" height="275" alt="passwordLength Function"><br>
 
 ## Development
 
