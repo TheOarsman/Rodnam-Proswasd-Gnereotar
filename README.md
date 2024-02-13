@@ -86,7 +86,7 @@ Here are two examples I used within my script.js to determine what characters co
 
 For the JavaScript, here is the array created to specify what character options are and what each contains:
 
-`` const specialCaseOptions = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~"; ``<br>
+`` const specialCaseOptions = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~" ``<br>
 `const upperCaseOptions = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br>
 `const lowerCaseOptions = "abcdefghijklmnopqrstuvwxyz"`<br>
 `const numericOptions = "0123456789"`<br>
