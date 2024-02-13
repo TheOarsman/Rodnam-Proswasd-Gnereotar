@@ -34,12 +34,10 @@ Based on your selections, a random password will be generated for you!
 
 - [Rodnam Proswasd Gnereotar](#Rodnam-Proswasd-Gnereotar)<br>
 - [Description](#description)<br>
-- [iPad Application](#ipad-application)<br>
-- [iPhone Application](#iphone-application)<br>
 - [Table of Contents](#tabel-of-contents)<br>
 - [User Story](#user-story)<br>
 - [Acceptance Criteria](#acceptance-criteria)<br>
-- [Installation](#instllation)<br>
+- [Code Example](#code-example)<br>
 - [Development](#development)<br>
 - [Usage](#usage)<br>
 - [Technologies](Technologies)
@@ -88,8 +86,75 @@ Here are two examples I used within my script.js to determine what characters co
 
 For the JavaScript, here is the array created to specify what character options are and what each contains:
 
-- https://github.com/TheOarsman/Rodnam-Proswasd-Gnereotar/blob/9e3f437c743e08a63aef7eec6735c6e147443dfb/script.js#L1-L4
+`` const specialCaseOptions = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~"; ``<br>
+`const upperCaseOptions = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br>
+`const lowerCaseOptions = "abcdefghijklmnopqrstuvwxyz"`<br>
+`const numericOptions = "0123456789"`<br>
 
 For the threshold of characters allowed to be used, I entered the below script. One tricky part was getting it to recognize when something other than a number was entered for the quantity, and to correct the error or throw up an Alert.
 
-- https://github.com/TheOarsman/Rodnam-Proswasd-Gnereotar/blob/9e3f437c743e08a63aef7eec6735c6e147443dfb/script.js#L12-L27
+[passwordLength = parseInt(passwordLength, 10);](https://github.com/TheOarsman/Rodnam-Proswasd-Gnereotar/blob/a3abfe6dd39a9b4bc8cbecb77c6177696092b691/script.js#L15-L28)
+
+## Development
+
+Future development plans:<br>
+
+- Replace multiple prompts with one prompt consisting of multiple check boxes
+
+## Usage
+
+N/A
+
+## Technologies
+
+![Javascript](https://img.shields.io/badge/-JavaScript-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)
+
+## License
+
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+MIT License
+
+Copyright 2024 Heinz Ulrich V
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Contributing
+
+N/A
+
+## Tests
+
+None currently
+
+## Resources
+
+None
+
+## Questions/Contact
+
+**Developer:** Heinz Ulrich V
+
+[![Gmail](assets/images/badges/GMAILBadge.png)](mailto:heinzulrichv@gmail.com)<br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/TheOarsman)<br>
+
+[![YouTube](assets/images/badges/YouTubeBadge.png)](https://www.youtube.com/@theoarsman4581)<br>
+
+[![LinkedIn](assets/images/badges/LinkedInBadge.png)](https://www.linkedin.com/in/heinz-ulrich-v-3a3486a0/)
