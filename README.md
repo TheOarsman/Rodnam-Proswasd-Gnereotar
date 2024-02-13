@@ -2,17 +2,18 @@
 
 [Rodnam Proswasd Gnereotar](https://theoarsman.github.io/Rodnam-Proswasd-Gnereotar/)
 
-<img src="assets/images/PsswrdGnrtr.png" width="500" height="350" alt="Password Generator">
+<img src="assets/images/PsswrdGnrtr.png" width="500" height="350" alt="Password Generator"><br>
 
-<img src="assets/images/length.jpeg" width="375" height="175" alt="Length Prompt">
+<img src="assets/images/length.jpeg" width="375" height="175" alt="Length Prompt"><br>
 
-<img src="assets/images/special.jpeg" width="375" height="110" alt="Special Characters Prompt">
-
-<img src="assets/images/upper.jpeg" width="375" height="110" alt="Upper Case Prompt">
-
-<img src="assets/images/lower.jpeg" width="375" height="110" alt="Lower Case Prompt">
-
-<img src="assets/images/numeric.jpeg" width="375" height="110" alt="Numeric Prompt">
+<div style="display: flex; justify-content: space-between;">
+    <img src="assets/images/special.jpeg" width="375" height="110" alt="Special Characters Prompt">
+    <img src="assets/images/upper.jpeg" width="375" height="110" alt="Upper Case Prompt">
+</div><br>
+<div style="display: flex; justify-content: space-between;">
+    <img src="assets/images/lower.jpeg" width="375" height="110" alt="Lower Case Prompt">
+    <img src="assets/images/numeric.jpeg" width="375" height="110" alt="Numeric Prompt">
+</div>
 
 ## Description
 
