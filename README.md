@@ -91,9 +91,9 @@ For the JavaScript, here is the array created to specify what character options 
 `const lowerCaseOptions = "abcdefghijklmnopqrstuvwxyz"`<br>
 `const numericOptions = "0123456789"`<br>
 
-For the threshold of characters allowed to be used, I entered the below script. One tricky part was getting it to recognize when something other than a number was entered for the quantity, and to correct the error or throw up an Alert.
+For the threshold of characters allowed to be used, I entered the below script. One tricky part was getting it to recognize when something other than a number was entered for the quantity, and to correct the error or throw up an Alert.<br>
 
-[passwordLength = parseInt(passwordLength, 10);](https://github.com/TheOarsman/Rodnam-Proswasd-Gnereotar/blob/a3abfe6dd39a9b4bc8cbecb77c6177696092b691/script.js#L15-L28)
+![passwordLength Function](assets/images/passwordLengthSnip.png)
 
 ## Development
 
