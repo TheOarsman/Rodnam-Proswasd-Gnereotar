@@ -135,3 +135,43 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+.footer-wrapper {
+  background-color: #f0f0f0; /* Set background color */
+  padding: 20px; /* Add padding around the footer */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the container horizontally */
+  position: fixed; /* Fix the position */
+  bottom: 0; /* Align to the bottom of the viewport */
+  width: 100%; /* Take up the full width */
+}
+
+.footer-container {
+  background-color: #f0f0f0; /* Set background color */
+  padding: 20px; /* Add padding around the icons */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Spread out the content */
+  align-items: center; /* Center vertically */
+  max-width: fit-content; /* Set maximum width to fit the content */
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  display: flex;
+}
+
+.footer-icons li {
+  margin: 0 5px; /* Adjust the spacing between icons */
+}
+
+.footer-icons img {
+  width: 30px; /* Adjust the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.copyright {
+  margin: 0; /* Remove any default margin */
+  font-size: 14px; /* Adjust the font size */
+}
